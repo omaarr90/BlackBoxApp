@@ -98,9 +98,10 @@
 		4C5D204C25D9D65D0037425D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				4C5D204D25D9D65D0037425D /* BlackBoxApp.swift */,
-				4C5D204E25D9D65D0037425D /* ContentView.swift */,
-				4C5D204F25D9D65E0037425D /* Assets.xcassets */,
+				4C5D208E25D9D67A0037425D /* App */,
+				4C5D209025D9D6AC0037425D /* BlackBoxCore */,
+				4C5D209125D9D6DB0037425D /* Resources */,
+				4C5D208F25D9D6850037425D /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -149,6 +150,37 @@
 				4C5D207525D9D65E0037425D /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		4C5D208E25D9D67A0037425D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4C5D204D25D9D65D0037425D /* BlackBoxApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4C5D208F25D9D6850037425D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C5D204E25D9D65D0037425D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C5D209025D9D6AC0037425D /* BlackBoxCore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BlackBoxCore;
+			sourceTree = "<group>";
+		};
+		4C5D209125D9D6DB0037425D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C5D204F25D9D65E0037425D /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
