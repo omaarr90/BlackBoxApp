@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		4C5D207925D9D65E0037425D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5D204E25D9D65D0037425D /* ContentView.swift */; };
 		4C5D207A25D9D65E0037425D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5D204F25D9D65E0037425D /* Assets.xcassets */; };
 		4C5D207B25D9D65E0037425D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C5D204F25D9D65E0037425D /* Assets.xcassets */; };
+		4C5D209D25D9E02C0037425D /* BlackBoxCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4C5D209C25D9E02C0037425D /* BlackBoxCore */; };
+		4C5D209F25D9E0360037425D /* BlackBoxCore in Frameworks */ = {isa = PBXBuildFile; productRef = 4C5D209E25D9E0360037425D /* BlackBoxCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		4C5D206F25D9D65E0037425D /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5D207325D9D65E0037425D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		4C5D207525D9D65E0037425D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C5D209625D9DB0F0037425D /* BlackBoxCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BlackBoxCore; path = ../BlackBoxCore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5D209D25D9E02C0037425D /* BlackBoxCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5D209F25D9E0360037425D /* BlackBoxCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +91,14 @@
 		4C5D204725D9D65D0037425D = {
 			isa = PBXGroup;
 			children = (
+				4C5D209625D9DB0F0037425D /* BlackBoxCore */,
 				4C5D204C25D9D65D0037425D /* Shared */,
 				4C5D205625D9D65E0037425D /* iOS */,
 				4C5D205D25D9D65E0037425D /* macOS */,
 				4C5D206725D9D65E0037425D /* Tests iOS */,
 				4C5D207225D9D65E0037425D /* Tests macOS */,
 				4C5D205525D9D65E0037425D /* Products */,
+				4C5D209B25D9E02C0037425D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +190,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		4C5D209B25D9E02C0037425D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,6 +213,9 @@
 			dependencies = (
 			);
 			name = "BlackBox (iOS)";
+			packageProductDependencies = (
+				4C5D209C25D9E02C0037425D /* BlackBoxCore */,
+			);
 			productName = "BlackBox (iOS)";
 			productReference = 4C5D205425D9D65E0037425D /* BlackBox.app */;
 			productType = "com.apple.product-type.application";
@@ -216,6 +233,9 @@
 			dependencies = (
 			);
 			name = "BlackBox (macOS)";
+			packageProductDependencies = (
+				4C5D209E25D9E0360037425D /* BlackBoxCore */,
+			);
 			productName = "BlackBox (macOS)";
 			productReference = 4C5D205C25D9D65E0037425D /* BlackBox.app */;
 			productType = "com.apple.product-type.application";
@@ -728,6 +748,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C5D209C25D9E02C0037425D /* BlackBoxCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlackBoxCore;
+		};
+		4C5D209E25D9E0360037425D /* BlackBoxCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BlackBoxCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C5D204825D9D65D0037425D /* Project object */;
 }
